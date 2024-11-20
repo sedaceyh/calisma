@@ -1,31 +1,58 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.11.35312.102
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sınav", "sınav.csproj", "{B5EE5382-CD70-4498-AC8B-C78278134792}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10dan sonra", "10dan sonra\10dan sonra.csproj", "{43014747-43F8-4EBC-97F6-4EF5B7FC811C}"
-EndProject
-Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B5EE5382-CD70-4498-AC8B-C78278134792}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B5EE5382-CD70-4498-AC8B-C78278134792}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B5EE5382-CD70-4498-AC8B-C78278134792}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B5EE5382-CD70-4498-AC8B-C78278134792}.Release|Any CPU.Build.0 = Release|Any CPU
-		{43014747-43F8-4EBC-97F6-4EF5B7FC811C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{43014747-43F8-4EBC-97F6-4EF5B7FC811C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{43014747-43F8-4EBC-97F6-4EF5B7FC811C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{43014747-43F8-4EBC-97F6-4EF5B7FC811C}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {85FB0A82-992F-4325-A860-48D21C0EDD83}
-	EndGlobalSection
-EndGlobal
+﻿// byte kullanımı:
+using System;
+
+byte birinci = 5;
+byte ikinci = 25;
+byte ucuncu = 255; //byte için 0-255 arası
+Console.WriteLine(birinci);
+Console.WriteLine(ikinci);
+Console.WriteLine(ucuncu);
+Console.ReadLine();
+
+
+byte maxDeger = byte.MaxValue; // byte max değeri gösterir
+byte minDeger = byte.MinValue;  // byte min değeri gösterir
+Console.WriteLine(minDeger);
+Console.WriteLine(maxDeger); //max değeri yazdırır
+Console.ReadLine();
+
+// short kullanımı:
+// short için -32768 ve 32767 arası
+short birincidegisken = -56;
+short ikincidegisken = 32000;
+Console.WriteLine(birincidegisken);
+Console.WriteLine(ikincidegisken);
+Console.ReadLine();
+short maxDegers = short.MaxValue; // short max değeri gösterir
+short minDegers = short.MinValue; // short min değeri gösterir
+Console.WriteLine(maxDegers);
+Console.WriteLine(minDegers); // min değeri yazdırır
+Console.ReadLine();
+
+// int kullanımı:
+// int veri tipi -2.147.483.648 ve 2.147.483.647 arası
+// 4 byte yer kaplar (ram bellek)
+// 8 bit = 1 byte, 1024 byte= 1 kilobyte, 1024 kilobyte= 1 megabyte, 1024 megabayt= 1 gigabyte,
+// 1024 gigabyte= 1 terabyte, 1024 terabyte= 1 petabyte
+int birincideger = 150000;
+Console.WriteLine(birincideger);
+Console.ReadLine();
+int imaxDeger= int.MaxValue;
+int iminDeger= int.MinValue;
+Console.WriteLine (imaxDeger);
+Console.WriteLine(iminDeger);
+Console.ReadLine();
+
+// long kullanımı
+// long veri tipi -9.223.372.036.854.775.808 ve 9.223.372.036.854.775.807 arasında
+// 8 byte yer kaplar (ram bellek)
+long sekizincideger = 27298653984;
+Console.WriteLine(sekizincideger);
+Console.ReadLine();
+long lmaxdeger= long.MaxValue;  
+long lmindeger= long.MinValue;
+Console.WriteLine(lmaxdeger);
+Console.WriteLine(lmindeger);
+Console.ReadLine();
+
+
